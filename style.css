@@ -1,0 +1,140 @@
+* { body {
+    padding: 0;
+    align-items: center;
+    font-family: "Plus Jakarta Sans" sans-serif;
+    display: flex;  
+    justify-content: center;
+    background-color: #f4f7fd;
+}
+
+.sidebar {
+    align-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.sidebar img {
+    height: 1.8rem;
+    margin: 1.4rem 0.6rem;
+    object-fit: cover;
+}
+
+.menu {
+    display: none;
+}
+
+.kanban-board {
+    margin: 1.45rem;
+}
+
+header {
+    display: none;
+    background-color: #fff;
+    padding: 2.4rem 1.8rem;
+
+}
+
+.column {
+    margin: 1.8rem 0;
+}
+
+.column-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.8;
+}
+
+.column-heading h3 {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+}
+
+.to-do-dot {
+    background-color: #49c4e5;
+}
+
+.doing-dot {
+    background-color: #8471f2;
+}
+
+.done-dot {
+    background-color: #67e2ae;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.card {
+    padding: 1.2rem;
+    background-color: #fff;
+    margin-bottom: 0.9rem;
+    border-radius: 8px;
+}
+
+@media (min-width: 1023px) {
+    body {
+        justify-content: start;
+        align-items: start;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .sidebar  {
+        align-content: start;
+        height: 100vh;
+        width: 300px;
+
+    }
+    .menu {
+        display: block;
+
+    }
+    .menu h4 {
+        color: #828fa3;
+        letter-spacing: 2.4px;
+        font-size: 12px;
+        margin: 3.1rem 1.4rem;
+
+}
+
+    .active {
+        color: #fff;
+        background-color: #635fc7;
+        width: 276px;
+        padding: 18px 0;
+        border-radius: 0 100px 100px 0;
+        cursor: pointer;
+    
+    }
+    .main {
+        overflow: auto;
+        flex: 1;
+
+    }
+    header {
+        display: block;
+        
+    }
+    .kanban-board {
+        display: flex;
+        flex-direction: row;
+    }
+    .column {
+        padding-right: 1.2rem;
+        width: 280px;
+
+    }
+}box-sizing: border-box;
+}
+
