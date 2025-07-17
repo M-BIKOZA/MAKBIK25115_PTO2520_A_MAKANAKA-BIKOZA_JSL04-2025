@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./scripts.js"></script>
+  
+  <title>Kanban-board</title>
+  
+</head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <img src="assets/logo-light.svg" alt="Kanban Logo" class="logo-img" />
+        <div class="menu">
+          <h4>ALL BOARDS(1)</h4>
+          <button class="active">Launch Career</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header>
+          <h2>Launch Career</h2>
+        </header>
+        <div class="kanban-board">
+          <div class="column">
+            <div class="column-heading">
+              <span class="to-do-dot dot"></span> 
+              
+              <h3>TODO(4)</h3>
+            </div>
+            
+            <div class="card">Launch Epic Career🚀</div>
+            <div class="card">Conquer React☸</div>
+            <div class="card">Understand Databases⚙</div>
+            <div class="card">Crush Frameworks🖼</div>
+          </div>
+          <div class="column">
+            <div class="column-heading">
+              <span class="doing-dot dot"></span>
+              <h3>DOING(3)</h3>
+            </div>
+            
+            <div class="card">Master JavaScript💛</div>
+            <div class="card">Never Give Up🏆</div>
+          </div>
+         <div class="column">
+          <div class="column-heading">
+            <span class="done-dot dot"></span>
+            <h3>DONE(2)</h3>
+          </div>
+            
+            <div class="card">Explore ES6 Features🚀</div>
+            <div class="card">Have Fun🥳</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
