@@ -76,7 +76,7 @@ for (let i = 0; i < tasks.length; i++) {
 function openModal(tasks) {
   const modal = document.getElementById("taskModal");
    const index = tasks.indexOf(task); // ✅ find index of the clicked task
-  modal.dataset.taskIndex = tasks.indexOf(task); 
+  modal.dataset.taskIndex = index; 
   document.getElementById("taskTitle").value = task.title;
   document.getElementById("taskDescription").value = task.description;
   modal.style.display = "block"
