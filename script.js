@@ -75,6 +75,7 @@ for (let i = 0; i < tasks.length; i++) {
 //Function to open the modal 
 function openModal(tasks) {
   const modal = document.getElementById("taskModal");
+   const index = tasks.indexOf(task); // ✅ find index of the clicked task
   modal.dataset.taskIndex = tasks.indexOf(task); 
   document.getElementById("taskTitle").value = task.title;
   document.getElementById("taskDescription").value = task.description;
